@@ -1,13 +1,13 @@
 {
-  "name": "intram-node",
-  "version": "1.0.2",
+  "name": "intram-node-apk",
+  "version": "1",
   "description": "INTRAM NODEJS API CLIENT",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "keywords": [],
-  "author": "Bahsoumany Oualid",
+  "author": "intram <contact@intram.org> (intram.org)",
   "license": "MIT",
   "dependencies": {
     "bluebird": "latest",
@@ -16,7 +16,13 @@
     "mocha": "^8.1.1",
     "superagent": "latest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UserName/package-name.git"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
-  }
+  },
+  "private": false,
+  "engineStrict": true
 }

@@ -16,9 +16,9 @@ function Setup(data) {
     this.config['X-SECRET-KEY'] = data && data.secret || process.env.INTRAM_SECRET;
     this.config['Content-Type'] = 'application/json';
     if (data && data.mode && data.mode.toLowerCase() === 'sandbox')
-        this.baseURL = 'https://webservices.intram.cf:4002/api/v1/';
+        this.baseURL = 'https://webservices.intram.org:4002/api/v1/';
     else
-        this.baseURL = 'https://webservices.intram.cf:4002/api/v1/';
+        this.baseURL = 'https://webservices.intram.org:4002/api/v1/';
 }
 
 /**
