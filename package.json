@@ -1,5 +1,5 @@
 {
-  "name": "intram-node-apk",
+  "name": "@intram-apk/nodejs",
   "version": "1.0.0",
   "description": "INTRAM NODEJS API CLIENT",
   "main": "index.js",
