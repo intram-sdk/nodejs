@@ -1,7 +1,7 @@
 # INTRAM NodeJS API Client
 
 
-[![npm version](https://badge.fury.io/js/intram-node.svg)](https://npmjs.org/package/intram-node)  [![downloads](https://img.shields.io/npm/dw/intram-node.svg)](https://npmjs.org/package/intram-node)  [![open issues](https://img.shields.io/github/issues-raw/suntechedvs/intram-node.svg)](https://github.com/suntechedvs/intram-node/issues)  [![license](https://img.shields.io/github/license/suntechedvs/intram-node.svg)](https://github.com/suntechedvs/intram-node/LICENSE)    [![coverage status](https://coveralls.io/repos/suntechedvs/intram-node/badge.svg)](https://coveralls.io/github/suntechedvs/intram-node) [![Gitter](https://badges.gitter.im/suntechedvs/intram-node.svg)](https://gitter.im/suntechedvs/intram-node)
+[![npm version](https://badge.fury.io/js/intram-node.svg)](https://npmjs.org/@intram-apk/nodejs)  [![downloads](https://img.shields.io/npm/dw/intram-node.svg)](https://npmjs.org/@intram-apk/nodejs)  [![open issues](https://img.shields.io/github/issues-raw/intram-apk/nodejs.svg)](https://github.com/intram-apk/nodejs/issues)  [![license](https://img.shields.io/github/license/intram-apk/nodejs.svg)](https://github.com/intram-apk/nodejs/LICENSE)   
 
 The [Node.JS](http://nodejs.org) library for [INTRAM (intram.org)](https://intram.org).
 
@@ -10,7 +10,7 @@ Built on the INTRAM HTTP API (beta).
 ## Installation
 
 ```sh
-npm install --save intram
+npm install @intram-apk/nodejs@1.0.2
 ```
 
 ## API configuration
