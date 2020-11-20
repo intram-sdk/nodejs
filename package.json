@@ -6,8 +6,16 @@
   "scripts": {
     "test": "mocha"
   },
+  "bugs": {
+    "email": "oualid@suntech.bj",
+    "url": "https://github.com/intram-apk/nodejs/issues"
+  },
   "keywords": [],
-  "author": "intram <contact@intram.org> (intram.org)",
+  "author": {
+    "url": "https://suntech.bj",
+    "name": "oualid BAH SOUMANY",
+    "email": "oualid@suntech.bj"
+  },
   "license": "MIT",
   "dependencies": {
     "bluebird": "latest",
@@ -18,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/intram-apk/nodejs"
+    "url": "https://github.com/intram-apk/nodejs.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
