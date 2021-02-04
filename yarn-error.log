@@ -1,0 +1,69 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @intram-apk/nodejs
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\server\php;C:\composer;C:\Users\BAH SOUMANY OUALID\AppData\Local\Microsoft\WindowsApps;C:\Users\BAH SOUMANY OUALID\AppData\Roaming\npm;C:\Program Files\JetBrains\WebStorm 2020.1\bin;;C:\Users\BAH SOUMANY OUALID\AppData\Local\Yarn\bin;C:\Users\BAH SOUMANY OUALID\AppData\Roaming\Composer\vendor\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.16.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npmjs.org/@intram-apk%2fnodejs: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66096:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140748:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141720:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1145:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "@intram-apk/nodejs",
+    "version": "1.1.0",
+    "description": "INTRAM NODEJS API CLIENT",
+    "main": "index.js",
+    "scripts": {
+      "test": "mocha"
+    },
+    "bugs": {
+      "url": "https://github.com/intram-apk/nodejs/issues",
+      "email": "oualid@suntech.bj"
+    },
+    "keywords": [],
+    "author": "oualid BAH SOUMANY <oualid@suntech.bj> (https://suntech.bj)",
+    "license": "MIT",
+    "dependencies": {
+      "bluebird": "latest",
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "mocha": "^8.1.1",
+      "superagent": "latest"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/intram-apk/nodejs.git"
+    },
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com/"
+    },
+    "private": false,
+    "engineStrict": true,
+    "homepage": "https://github.com/intram-apk/nodejs#readme",
+    "devDependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
