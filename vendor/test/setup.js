@@ -27,13 +27,13 @@ describe('Setup', function () {
 
     it('should set to sandbox base url as endpoint in test mode', function (done){
         var setup = new Setup({mode: 'sandbox'});
-        assert.strictEqual(setup.baseURL, 'https://webservices.intram.cf:4002/api/v1/');
+        assert.strictEqual(setup.baseURL, 'https://webservices.intram.org:4002/api/v1/');
         done();
     });
 
     it('should set live baseURL when mode !== "sandbox"', function (done){
         var setup = new Setup();
-        assert.strictEqual(setup.baseURL, 'https://webservices.intram.cf:4002/api/v1/');
+        assert.strictEqual(setup.baseURL, 'https://webservices.intram.org:4002/api/v1/');
         done();
     });
 });

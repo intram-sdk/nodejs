@@ -1,21 +1,17 @@
 {
   "name": "@intram-apk/nodejs",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "INTRAM NODEJS API CLIENT",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "bugs": {
-    "email": "oualid@suntech.bj",
-    "url": "https://github.com/intram-apk/nodejs/issues"
-  },
-  "keywords": [],
-  "author": {
-    "url": "https://suntech.bj",
-    "name": "oualid BAH SOUMANY",
+    "url": "https://github.com/intram-apk/nodejs/issues",
     "email": "oualid@suntech.bj"
   },
+  "keywords": [],
+  "author": "oualid BAH SOUMANY <oualid@suntech.bj> (https://suntech.bj)",
   "license": "MIT",
   "dependencies": {
     "bluebird": "latest",
@@ -26,11 +22,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/intram-apk/nodejs.git"
+    "url": "git+https://github.com/intram-apk/nodejs.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "private": false,
-  "engineStrict": true
+  "engineStrict": true,
+  "homepage": "https://github.com/intram-apk/nodejs#readme",
+  "devDependencies": {}
 }
