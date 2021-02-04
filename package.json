@@ -14,6 +14,7 @@
   "author": "oualid BAH SOUMANY <oualid@suntech.bj> (https://suntech.bj)",
   "license": "MIT",
   "dependencies": {
+    "@intram-apk/nodejs": "^1.1.1",
     "bluebird": "latest",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
@@ -22,9 +23,6 @@
   },
   "repository": {
     "url": "git://github.com/intram-apk/nodejs.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "private": false,
   "engineStrict": true,
