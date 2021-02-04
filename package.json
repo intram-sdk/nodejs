@@ -21,8 +21,7 @@
     "superagent": "latest"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/intram-apk/nodejs.git"
+    "url": "git://github.com/intram-apk/nodejs.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
