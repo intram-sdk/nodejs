@@ -10,6 +10,9 @@
     "url": "https://github.com/intram-apk/nodejs/issues",
     "email": "oualid@suntech.bj"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [],
   "author": "oualid BAH SOUMANY <oualid@suntech.bj> (https://suntech.bj)",
   "license": "MIT",
