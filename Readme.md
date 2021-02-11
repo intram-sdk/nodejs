@@ -10,7 +10,7 @@ Built on the INTRAM HTTP API (beta).
 ## Installation
 
 ```sh
-npm install @intram-apk/nodejs
+npm install @intram-sdk/nodejs
 ```
 
 ## API configuration
