@@ -1,7 +1,7 @@
 # INTRAM NodeJS API Client
 
 
-[![npm version](https://badge.fury.io/js/intram-node.svg)](https://npmjs.org/@intram-apk/nodejs)  [![downloads](https://img.shields.io/npm/dw/intram-node.svg)](https://npmjs.org/@intram-apk/nodejs)  [![open issues](https://img.shields.io/github/issues-raw/intram-apk/nodejs.svg)](https://github.com/intram-apk/nodejs/issues)  [![license](https://img.shields.io/github/license/intram-apk/nodejs.svg)](https://github.com/intram-apk/nodejs/LICENSE)   
+[![npm version](https://badge.fury.io/js/intram-node.svg)](https://npmjs.org/@intram-sdk/nodejs)  [![downloads](https://img.shields.io/npm/dw/intram-node.svg)](https://npmjs.org/@intram-sdk/nodejs)  [![open issues](https://img.shields.io/github/issues-raw/intram-sdk/nodejs.svg)](https://github.com/intram-sdk/nodejs/issues)  [![license](https://img.shields.io/github/license/intram-sdk/nodejs.svg)](https://github.com/intram-sdk/nodejs/LICENSE)   
 
 The [Node.JS](http://nodejs.org) library for [INTRAM (intram.org)](https://intram.org).
 
