@@ -1,6 +1,6 @@
 {
   "name": "@intram-sdk/nodejs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "INTRAM NODEJS API CLIENT",
   "main": "index.js",
   "scripts": {
