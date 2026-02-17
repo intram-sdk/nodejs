@@ -3,6 +3,7 @@
   "version": "0.0.4",
   "description": "INTRAM NODEJS API CLIENT",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"No test specified\""
   },
@@ -17,14 +18,14 @@
   "author": "oualid BAH SOUMANY <oualid@suntech.bj> (https://suntech.bj)",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "latest",
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "mocha": "^8.1.1",
-    "superagent": "latest"
+    "superagent": "^8.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.1.1"
   },
   "private": false,
-  "engineStrict": true,
-  "homepage": "https://github.com/intram-apk/nodejs#readme",
-  "devDependencies": {}
+  "engines": {
+    "node": ">=14"
+  },
+  "homepage": "https://github.com/intram-apk/nodejs#readme"
 }

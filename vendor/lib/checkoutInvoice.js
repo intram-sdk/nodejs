@@ -1,6 +1,5 @@
 let Invoice = require('./invoice')
     , request = require('superagent')
-    , Promise = require('bluebird')
 ;
 
 
@@ -32,7 +31,6 @@ CheckoutInvoice.prototype.create = function (){
             .end(function (err, res) {
                 if (err) return reject(err)
                 if (!res.body.error) {
-                    console.log(res.body);
                     self.token = res.body.transaction_id;
                     self.url = res.body.receipt_url;
                     self.status=res.body.status;
@@ -62,7 +60,6 @@ CheckoutInvoice.prototype.confirm = function (givenToken) {
                   if (err) return reject(err)
                 let body = res.body
                 if (!body.error) {
-                    console.log(res.body);
                     self.status = body.status;
                     self.responseText = body.message!==undefined && body.message!==null ? body.message : "";
                     if (self.status === 'SUCCESS') {

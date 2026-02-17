@@ -1,7 +1,7 @@
 # INTRAM NodeJS API Client
 
 
-[![npm version](https://badge.fury.io/js/intram-node.svg)](https://npmjs.org/@intram-sdk/nodejs)  [![downloads](https://img.shields.io/npm/dw/intram-node.svg)](https://npmjs.org/@intram-sdk/nodejs)  [![open issues](https://img.shields.io/github/issues-raw/intram-sdk/nodejs.svg)](https://github.com/intram-sdk/nodejs/issues)  [![license](https://img.shields.io/github/license/intram-sdk/nodejs.svg)](https://github.com/intram-sdk/nodejs/LICENSE)   
+[![npm version](https://badge.fury.io/js/intram-node.svg)](https://npmjs.org/@intram-sdk/nodejs)  [![downloads](https://img.shields.io/npm/dw/intram-node.svg)](https://npmjs.org/@intram-sdk/nodejs)  [![open issues](https://img.shields.io/github/issues-raw/intram-sdk/nodejs.svg)](https://github.com/intram-sdk/nodejs/issues)  [![license](https://img.shields.io/github/license/intram-sdk/nodejs.svg)](https://github.com/intram-sdk/nodejs/LICENSE)
 
 The [Node.JS](http://nodejs.org) library for [INTRAM (intram.org)](https://intram.org).
 
@@ -23,7 +23,7 @@ var setup = new intram.Setup({
   marchandKey: 'tpk_5e9469e65341de91988b352eba11f9f0c5f671384e1d6bfb09ce301',
   privateKey: 'tpk_5e9469e65341de91988b352eba11f9f0c5f671384e1d6bfb09ce',
   publicKey: "5e59e0c34bb8737cedf4c0ec92d9ae94007e33e5c30280596",
-  secret: 'tsk_243a7b89fd82a2b4e049c0c8ff39c3012ee6ec70bda3288ad2b'          
+  secret: 'tsk_243a7b89fd82a2b4e049c0c8ff39c3012ee6ec70bda3288ad2b'
 });
 ```
 
@@ -143,8 +143,34 @@ var store = new intram.Store({
 invoice.callBackURL = 'http://www.landryshop/confirm';
 ```
 
-### Confirming a Checkout Programatically
-The API allows you to check on the status of any checkout using the checkout token key. You have access to all the data including the receipt download link & customer information in cases where the checkout has been confirmed as completed.
+### Confirming a Transaction
+
+There are two ways to confirm a transaction:
+
+#### Standalone confirmation (recommended)
+
+Use `setup.confirm(token)` to confirm a transaction without creating an invoice. This returns a plain result object with all the transaction details.
+
+```js
+var token = 'odaff0a023';
+
+setup.confirm(token)
+  .then(function (result) {
+    result.status;       // SUCCESS, PENDING, CANCELED or FAIL
+    result.customer;     // { name, phone, email } or null
+    result.receiptURL;   // PDF receipt URL or null
+    result.customData;   // custom data object or null
+    result.totalAmount;  // total amount charged
+    result.responseText; // response message
+  })
+  .catch(function (e) {
+    console.log(e);
+  });
+```
+
+#### Via CheckoutInvoice
+
+You can also confirm using a `CheckoutInvoice` instance. This mutates the invoice object with the transaction data.
 
 ```js
 var token = 'odaff0a023';
@@ -162,9 +188,9 @@ invoice.confirm(token)
     console.log(e);
   });
 ```
+
 ## Dependencies
 
-- [bluebird](https://github.com/petkaantonov/bluebird): Full featured Promises/A+ implementation with exceptionally good performance
 - [superagent](https://github.com/visionmedia/superagent): Small progressive client-side HTTP request library, and Node.js module with the same API, supporting many high-level HTTP client features
 
 ## Dev Dependencies
