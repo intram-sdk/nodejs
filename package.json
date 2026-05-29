@@ -4,6 +4,10 @@
   "description": "INTRAM NODEJS API CLIENT",
   "main": "index.js",
   "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intram-sdk/nodejs.git"
+  },
   "files": [
     "index.js",
     "index.d.ts",
