@@ -15,7 +15,7 @@
     "test": "mocha test/**/*.test.js"
   },
   "bugs": {
-    "url": "https://github.com/intram-apk/nodejs/issues",
+    "url": "https://github.com/intram-sdk/nodejs/issues",
     "email": "oualid@suntech.bj"
   },
   "publishConfig": {
@@ -32,7 +32,7 @@
   },
   "private": false,
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
-  "homepage": "https://github.com/intram-apk/nodejs#readme"
+  "homepage": "https://github.com/intram-sdk/nodejs#readme"
 }
