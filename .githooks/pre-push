@@ -1,0 +1,11 @@
+#!/bin/sh
+# Block the push if the test suite fails.
+# Enable once per clone with:  git config core.hooksPath .githooks
+echo "Running tests before push..."
+npm test
+if [ $? -ne 0 ]; then
+  echo "\033[31m✗ Tests failed — push aborted.\033[0m"
+  exit 1
+fi
+echo "\033[32m✓ Tests passed — proceeding with push.\033[0m"
+exit 0
